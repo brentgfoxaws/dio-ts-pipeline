@@ -13,7 +13,7 @@ export class DioTsPipelineStack extends Stack {
 			synth: new CodeBuildStep("SynthStep", {
 				input: CodePipelineSource.connection(
 					"brentgfoxaws/dio-ts-pipeline",
-					"main",
+					"master",
 					{
 						connectionArn:
 							"arn:aws:codestar-connections:us-west-2:492199546644:connection/5054d256-4253-4d4b-aeed-3828a581ffba"
