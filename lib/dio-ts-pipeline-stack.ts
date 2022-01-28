@@ -9,7 +9,7 @@ export class DioTsPipelineStack extends Stack {
 
     const pipeline = new CodePipeline(this, 'Pipeline', {
 
-      pipelineName: "BlogPipeline",
+      pipelineName: "dio-development-pipeline",
 			synth: new CodeBuildStep("SynthStep", {
 				input: CodePipelineSource.connection(
 					"brentgfoxaws/dio-ts-pipeline",
